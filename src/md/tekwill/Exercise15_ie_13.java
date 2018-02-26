@@ -14,26 +14,18 @@ public class Exercise15_ie_13 {
         * */
 
         Exercise15_ie_13 main = new Exercise15_ie_13();
-        LocalDate localDate = main.easterDate(2018);
+        LocalDate localDate = main.easterDate(2011);
         System.out.println(localDate);
     }
 
     private LocalDate easterDate(int year) {
-        int Y = year;
-        int a = Y % 19;
-        int b = Y / 100;
-        int c = Y % 100;
-        int d = b / 4;
-        int e = b % 4;
-        int f = (b + 8) / 25;
-        int g = (b - f + 1) / 3;
-        int h = (19 * a + b - d - g + 15) % 30;
-        int i = c / 4;
-        int k = c % 4;
-        int L = (32 + 2 * e + 2 * i - h - k) % 7;
-        int m = (a + 11 * h + 22 * L) / 451;
-        int month = (h + L - 7 * m + 114) / 31;
-        int day = ((h + L - 7 * m + 114) % 31) + 1;
+        int a = year % 4;
+        int b = year % 7;
+        int c = year % 19;
+        int d = (19*c + 15) % 30;
+        int e = (2*a + 4*b - d + 34) % 7;
+        int month = (int) Math.floor((d + e + 114)/31.0);
+        int day = ((d + e + 114) % 31) + 1;
         return LocalDate.of(year, month, day);
     }
 }
