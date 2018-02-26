@@ -15,6 +15,8 @@ public class Exercise5 {
 
         String[] split = names.split(",");
 
-        System.out.println(Arrays.toString(split));
+        for (String s : split) {
+            System.out.println(s);
+        }
     }
 }
