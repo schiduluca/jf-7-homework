@@ -11,5 +11,9 @@ public class Exercise14 {
        * would help you insert 'Mihai' after 'Luca' in the comma separated names list.
        * Output: "Alexei,Andrei,Eugen,Jana,Luca,Mihai,Olea,Serghei,Sergiu,Victor,Vitalie,Vlad"
        * */
+
+        stringBuilder.insert(stringBuilder.indexOf("Luca,") + "Luca,".length(), "Mihai,");
+
+        System.out.println(stringBuilder.toString());
     }
 }

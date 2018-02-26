@@ -10,5 +10,8 @@ public class Exercise12 {
        * would help you print the string in reverse order.
        * Output: "dalV,eilatiV,rotciV,uigreS,iehgreS,aelO,acuL,anaJ,neguE,ierdnA,iexelA"
        * */
+
+        System.out.println(new StringBuilder(names).reverse());
+
     }
 }

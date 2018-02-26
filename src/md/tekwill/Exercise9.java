@@ -11,5 +11,7 @@ public class Exercise9 {
 	  'Ion is not part of the names variable'
 	  'Jana is part of the names variable'
 	  */
+        System.out.println(names.contains("Ion"));
+        System.out.println(names.contains("Jana"));
     }
 }

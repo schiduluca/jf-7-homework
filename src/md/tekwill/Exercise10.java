@@ -12,5 +12,7 @@ public class Exercise10 {
 	  'Variable value starts with Alexei'
 	  'Variable value doesn't end with Ion'
 	  */
+        System.out.println(names.startsWith("Alexei"));
+        System.out.println(names.startsWith("Ion"));
     }
 }

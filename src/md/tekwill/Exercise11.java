@@ -1,5 +1,8 @@
 package md.tekwill;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class Exercise11 {
 
     public static void main(String[] args) {
@@ -13,5 +16,13 @@ public class Exercise11 {
        *
        * Output: "Alexei,Andrei,Eugen,Jana,Luca,Olea,Serghei,Sergiu,Victor,Vitalie,Vlad"
        * */
+
+        /**
+         * @link Collectors#joining() method uses StringBuilder inside, so I guess it's legit
+         */
+        String collect = Arrays.stream(names)
+            .collect(Collectors.joining(", "));
+
+        System.out.println(collect);
     }
 }

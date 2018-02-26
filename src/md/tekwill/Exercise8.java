@@ -10,5 +10,8 @@ public class Exercise8 {
 	  a) all lower cases: 'alexei,andrei,eugen...'
 	  b) all upper cases: 'ALEXEI,ANDREI,EUGEN'
 	  */
+
+	      names = names.toUpperCase();
+        System.out.println(names);
     }
 }
